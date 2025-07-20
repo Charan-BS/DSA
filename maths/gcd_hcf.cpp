@@ -17,10 +17,10 @@ if(n1>n2) small=n2 : small=n1
 
 
 int gcd(int n1, int n2){
-    int gcd=1, small;
-    small = (n1<n2)? n1 : n2;
+    int gcd = 1;
 
-    for(int i=1;i<=small;i++){
+    for (int i = 1; i <= min(n1, n2); i++)
+    {
         if(n1%i==0 && n2%i==0)
             gcd=i;
     }
