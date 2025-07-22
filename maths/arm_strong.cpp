@@ -9,7 +9,7 @@ bool armstrong(int n){
     int power = log10(n)+1;
     while(n>0){
         int lD = n % 10;
-        sum += pow(lD,power);
+        sum += pow(lD, power);
         n = n / 10;
     }
     
